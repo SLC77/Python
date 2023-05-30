@@ -18,3 +18,4 @@ var2=var1
 print(var1 + " | " + var2) 
 # après avoir complété l'exercice, doit afficher :
 # Je dois être en première position | Je dois être en seconde position
+
