@@ -25,13 +25,43 @@
 #Écrire une fonction est_pair(). 
 #Cette fonction prend en argument un nombre nb, et renvoie True si nb est pair, False sinon.
 
-nb = int(input("Entrez un nombre : ")) #On entre un chiffre pour savoir si il est pair ou impair
+#nb = int(input("Entrez un nombre : ")) #On entre un chiffre pour savoir si il est pair ou impair
 
-def est_pair(nb:int): #on defini la fonction qui va chercher si le nombre est pair ou impair
+#def est_pair(nb:int): #on defini la fonction qui va chercher si le nombre est pair ou impair
     
-    if nb % 2 == 0: #On appelle le modulo pour diviser le nombre par 2 ou voir si il tombe sur un chiffre pair ou impair
-        print('True') #On demande d'afficher True si c'est pair
-    else:
-        print('False') #On demande d'afficher False c'est impair
+#    if nb % 2 == 0: #On appelle le modulo pour diviser le nombre par 2 afin de savoir si celui-ci est pair ou impair
+#        print('True') #On demande d'afficher True si c'est pair
+#    else:
+#        print('False') #On demande d'afficher False c'est impair
 
-est_pair(nb)
+#est_pair(nb)
+
+### Exercice 3 :
+
+#Écrire une fonction qui prend pour argument 3 nombres, et renvoie le plus petit des trois
+
+#nb1 = int(input('Enter a number :' ))
+#nb2 = int(input('Enter a second number :' ))
+#nb3 = int(input('Enter a  third number :' ))
+
+#def min(nb:int):
+
+#    if nb1 < nb2 and nb2 < nb3:
+#        print('Le plus petit nombre est',nb1)
+#    elif nb1 > nb2 and nb2 < nb3:
+#        print('Le plus petit nombre est ',nb2)
+#    else:
+#        print('Le plus petit nombre est' ,nb3)
+
+#min(nb1)
+
+### Exercice 4 :
+
+#Écrire la docstring de la fonction suivante, et améliorer la qualité du code :
+
+def valeur(, b):
+    if a < 0:
+        a = -a
+    if b < 0:
+        b = -b
+    return a*b
