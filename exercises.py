@@ -98,6 +98,10 @@ turtle.right(30)
 turtle.forward(115)
 turtle.right(120)
 turtle.forward(115)
+
+
+
+
 turtle.done() # hold the screen
 
 
