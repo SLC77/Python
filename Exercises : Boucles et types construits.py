@@ -85,7 +85,3 @@ else :
 
 ##Créer une liste (**par compréhension !**) qui contient 1000 nombres aléatoires entre 1 et 100 (1000 lancers de dé)
 
-from random import randint
-
-liste = []
-for _ in range(1000)
