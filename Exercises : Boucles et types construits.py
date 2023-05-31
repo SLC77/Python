@@ -55,10 +55,37 @@
 
 # Les différentes consoles
 
-consoles = ['Nintendo', 'Playstation', 'Xbox']
-print('Original list', consoles)
+#consoles = ['Nintendo', 'Playstation', 'Xbox']
+#print('Original list', consoles)
 
 #Reversing list
-consoles.reverse()
+#consoles.reverse()
 
-print('New list', consoles)
+#print('New list', consoles)
+
+
+
+## Exercice 6 :
+
+##Créer un dictionnaire contenant des mots et leurs définitions.
+##Écrire un programme qui demande à l'utilisateur un mot. Si ce mot est dans le dictionnaire, affichez sa définition. Sinon, affichez "Nous ne connaissons pas ce mot"
+
+user_request = input("Please, enter a word : ")
+my_dictionary = {
+    'Python': 'Est un langage de programmation largement utilisé dans les applications Web, le développement de logiciels, la science des données et le machine learning (ML).' #create a dictionary
+    
+}
+if my_dictionary.get(user_request) != None:
+    print(my_dictionary.get(user_request))
+else :
+    print('Nous ne connaisson pas ce mot')
+
+
+## Exercice 7 :
+
+##Créer une liste (**par compréhension !**) qui contient 1000 nombres aléatoires entre 1 et 100 (1000 lancers de dé)
+
+from random import randint
+
+liste = []
+for _ in range(1000)
