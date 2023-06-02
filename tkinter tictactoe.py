@@ -42,6 +42,8 @@ root.title('Tic Tac Toe Championship')
 root.resizable(0,0)
 
 for x in range(3):
+    root.columnconfigure(x, weight=1, minsize=100)
+    root.rowconfigure(x, weight=1, minsize=75)
     for y in range(3):
         frame = tk.Frame(
             master=root,
@@ -49,7 +51,7 @@ for x in range(3):
             borderwidth=1
         )
         frame.grid(row=x, column=y, padx=10, pady=10)
-        label = tk.Label(master=frame, text=f"\n\nrow {x}\t\t column {y}\n\n")
+        label = tk.Label(master=frame, text=f"\n\nrow {x}\t\t {y}\n\n")
         label.pack()
 
 root.mainloop()
