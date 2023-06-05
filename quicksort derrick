@@ -1,0 +1,34 @@
+### Quick sort ou tri rapide
+
+#Fonction recursive du tri rapide
+def quick_sort(list):
+    pivot_choice = len(list) #Definition du pivot
+    if pivot_choice <= 1: 
+        return list
+    else:
+        pivot = list.pop()
+
+# Listes des plus grands & plus petits éléments
+
+    items_greater = []
+    items_lower = []
+
+# Si élément > pivot ----> intégration dans liste des plus grands
+
+    for item in list:
+        if item > pivot:
+            items_greater.append(item)
+
+# Si élément < pivot ----> intégration dans liste des plus petits
+
+        else:
+            items_lower.append(item)
+
+    # items_greater = [item for item in list if item > pivot]
+    # items_lower = [item for item in list if item < pivot]
+
+    return quick_sort(items_lower) + [pivot] + quick_sort(items_greater)
+
+
+print(quick_sort([15,56,2,9,4,23,19]))
+
