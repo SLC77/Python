@@ -13,8 +13,8 @@ def intro():
 
 def create_grid():
     board = [[" ", " ", " "],
-                    [" ", " ", " "],
-                    [" ", " ", " "],]
+             [" ", " ", " "],
+             [" ", " ", " "],]
     return board
 
 #Decide player's symbol choice
